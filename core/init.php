@@ -5,8 +5,6 @@ echo 'Database conenction failed with following erro: '. mysql_connect_error();
 die();
 }
 
-
-
 ?>
 
 
