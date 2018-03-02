@@ -1,7 +1,7 @@
  <?php 
  require_once '../core/init.php';
  include 'includes/head.php';
- include 'inlcudes/navigation.php';
+ include 'includes/navigation.php';
  ?>
 
  Administrator Home

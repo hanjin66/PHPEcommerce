@@ -70,3 +70,8 @@ img.details{
     display: flex;
     align-items: left;
 }
+
+.table-auto{
+    width:auto;
+    margin:0 auto;
+}

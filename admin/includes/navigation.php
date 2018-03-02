@@ -1,7 +1,7 @@
     <!-- top nav bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <a href="index.php" class="navbar-brand">New page Admin </a>
+            <a href="/tutorial/admin/index.php" class="navbar-brand">New page Admin </a>
             <ul class="nav navbar-nav">
          
                 <li><a href="brands.php">brands</a></li>   
