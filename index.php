@@ -1,18 +1,17 @@
-<?php
+    <?php
 
-require_once 'core/init.php';
-include 'includes/head.php';
-include 'includes/navigation.php';
-include 'includes/headerfull.php';
-include 'includes/leftbar.php';
+    require_once 'core/init.php';
+    include 'includes/head.php';
+    include 'includes/navigation.php';
+    include 'includes/headerfull.php';
+    include 'includes/leftbar.php';
+        
+    $sql = "SELECT * FROM products WHERE featured =1";
+    $featured = $db->query($sql);
+    ?>
 
-$sql = "SELECT * FROM products WHERE featured =1";
-$featured = $db->query($sql);
-?>
-
-
-
-
+  
+    
 
     <!-- main content -->
     <div class="col-md-8">Feature products
@@ -20,13 +19,13 @@ $featured = $db->query($sql);
             <h2 class="text-center">Feature products</h2>
             <?php while ($product = mysqli_fetch_assoc($featured)): ?>
             <div class="col-md-3">
-                <h4><?= $product['title'];?> </h4>
-                <img src="<?=$product['image']; ?>" alt="<?= $product['title'];?>" class="img-thumb" />
+                <h4><?=$product['title'];?> </h4>
+                <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" class="img-thumb" />
                 <p class="list-price text-danger"> List price:
                     <s><?=$product['list_price'];?></s>
                 </p>
                 <p class="price">Our price: $<?=$product['price'];?></p>
-                <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-sm btn-success" onclick="detailsmodal(<?=$product['id']; ?>)">Details</button>
             </div>
             <?php endwhile;?>
 
@@ -36,8 +35,10 @@ $featured = $db->query($sql);
 
 
 
-<?php
-include 'includes/rightbar.php';
-include 'includes/footer.php';
+    <?php
+    include 'includes/rightbar.php';
+    include 'includes/footer.php';
 
-?>
+    ?>
+
+  

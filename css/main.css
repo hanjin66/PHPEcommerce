@@ -65,3 +65,8 @@ img.details{
     margin:15px auto;
     
 }
+
+.vertical-align {
+    display: flex;
+    align-items: left;
+}
