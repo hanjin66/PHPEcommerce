@@ -5,6 +5,7 @@
             <ul class="nav navbar-nav">
          
                 <li><a href="brands.php">brands</a></li>   
+                <li><a href="categories.php">categories</a></li>  
                 <!-- mens closing
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $parent['category'];?>

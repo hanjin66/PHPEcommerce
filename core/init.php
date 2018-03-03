@@ -5,9 +5,8 @@ echo 'Database conenction failed with following erro: '. mysql_connect_error();
 die();
 }
 
-define('BASEURL','/tutorial/');
-
-?>
+require_once $_SERVER['DOCUMENT_ROOT'].'/tutorial/config.php';
+require_once BASEURL.'helpers/helpers.php';
 
 
 

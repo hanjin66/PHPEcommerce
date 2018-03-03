@@ -6,7 +6,7 @@
 <!-- right side bar -->
 
 
-<footer class="text-center" id="footer">&copy; Copyright 2013-2014 </footer>
+<footer class="text-center" id="footer">&copy; Copyright 2018 </footer>
 
 
 
@@ -42,7 +42,7 @@
         
         jQuery.ajax({
 
-            url:<?=BASEURL;?>+'includes/detailsmodal.php',
+            url:'/tutorial/includes/detailsmodal.php',
             method:"post",
             data: data,
             success: function(data){
