@@ -36,7 +36,11 @@ if (isset($_GET['add'])) {
 
 </select>
 </div>
-
+<div class= "form-group col-md-3">
+<label for="child">Child Category*:</label>
+<select name="child" id="child" class="form-control">
+</select>
+</div>
 </form>
 
  <?php } else {
