@@ -6,6 +6,8 @@
          
                 <li><a href="brands.php">brands</a></li>   
                 <li><a href="categories.php">categories</a></li>  
+                <li><a href="products.php">products</a></li>  
+
                 <!-- mens closing
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $parent['category'];?>
